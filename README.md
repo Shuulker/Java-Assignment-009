@@ -17,6 +17,10 @@
 
 ```text
 ANSWER Why not? HERE
+Because Integers can only store a number value as high as 2,147,483,647 and it's negative counterpart.
+When it exceeds this number it loops back around to the negative and repeats that process if the number is large enough.
+That's why you see it switch between negative numbers and positive numbers towards the end.
+The factorial for 15 and even some of the numbers before 15 far exceed two billion and thus start looping.
 ```
 
 3. Convert factorial so that it performs its calculation using **BigIntegers** and returns a **BigInteger** as a result.
@@ -27,6 +31,8 @@ ANSWER Why not? HERE
 
 ```text
 ANSWER #4 HERE
+BigIntegers are designed to hold arbitrarily high values so it should be able to display any number as long as it has the available memory to display it.
+Although, IntelliJ gives me an error when I try to display 10,000,000,000 or higher.
 ```
 
 ## Submission
